@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Rock Paper Scissors</h1>
+        <div class="button-container">
+            <button class="game-button rock-btn" data-choice="rock"><i class="fas fa-hand-rock"></i> Rock</button>
+            <button class="game-button paper-btn" data-choice="paper"><i class="fas fa-hand-paper"></i> Paper</button>
+            <button class="game-button scissors-btn" data-choice="scissors"><i class="fas fa-hand-scissors"></i> Scissors</button>
+        </div>
+        
+        <div class="animation-container">
+            <div class="player-side">
+                <div class="hand player-hand">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+                <p>Player</p>
+            </div>
+            <div class="vs">VS</div>
+            <div class="computer-side">
+                <div class="hand computer-hand">
+                    <i class="fas fa-hand-rock"></i>
+                </div>
+                <p>Computer</p>
+            </div>
+        </div>
+        
+        <div class="result-container">
+            <p class="result-text">Choose an option to start the game</p>
+        </div>
+        <div class="score-container">
+            <p class="score-text">Player: 0 - Computer: 0</p>
+        </div>
+        <div class="history-container">
+            <h3>Game History</h3>
+            <ul class="history-list"></ul>
+        </div>
+        <div class="reset-container">
+            <button class="reset-button">Reset Game</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
